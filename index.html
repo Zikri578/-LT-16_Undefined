@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Javascript</title>
+</head>
+
+<body>
+    <main id="root">
+        <h1>Undefined Javascript</h1>
+        <script>
+            // membuat variabel nama
+            let nama;
+
+            // melakukan pengkondisian jika nama sama dengan tipe data undefined
+            if (nama === undefined) {
+                // hasilnya undefined
+                console.info("Undefined");
+            } else {
+                // hasilnya defined
+                console.info("Defined");
+            }
+            // output : undefined
+
+            // membuat variabel username dengan menampung array didalamnya
+            let username = ["Muhammad", "Zikri"];
+
+
+            // jika username dengan array pertama sama dengan tipe data undefined
+            if (username[1] === undefined) {
+                // hasilnya array defined
+                console.info("Array Undefined");
+            } else {
+                // hasilnya array defined
+                console.info("Array Defined");
+            }
+            // output : array defined
+
+            // membuat variabel ttl yang menampung array didalamnya
+            let ttl = ["Bandung", "Sulawesi"];
+            // menghapus variabel ttl dengan index kedua
+            delete ttl[1];
+
+            // jika variabel ttl array kedua sama dengan tipe data undefined
+            if (ttl[1] === undefined) {
+                // hasilnya array tidak ditemukan
+                console.info("Array tidak ditemukan");
+            } else {
+                // hasilnya array ditemukan
+                console.info("Array ditemukan");
+            }
+            // output : array tidak ditemukan
+
+            // membuat variabel alamat yang menampung array didalamnya
+            let alamat = ["Riau", "Menda"];
+            // menghapus alamat dengan index kesatu
+            delete alamat[0];
+
+            // jika variabel alamat array pertama sama dengan tipe data undefined
+            if (alamat[0] === undefined) {
+                // hasilnya array is undefined
+                console.info("Array is undefined");
+            } else {
+                // hasilnya array is defined
+                console.info("Array is defined");
+            }
+            // output : array is undefined
+
+            // membuat variabel negara yang menampung array didalamnya
+            let negara = ["indonesia", "malaysia"];
+            // menghapus negara dengan index kedua
+            delete negara[1];
+
+            // jika variabel negara array pertama sama dengan tipe data undefined
+            if (negara[0] === undefined) {
+                // hasilnya array tidak ditemukan
+                console.info("array tidak ditemukan");
+            } else {
+                // hasilnya array ditemukan
+                console.info("array ditemukan");
+            }
+            // output : array ditemukan
+
+            // membuat variabel orang yang menampung objek didalamnya
+            const orang = {
+                name: "Fatur",
+                date: 1999
+            };
+
+            if (orang.date === undefined) {
+                console.info("Objek tidak ditemukan");
+            } else {
+                console.info("Objek ditemukan");
+            }
+            // output : objek ditemukan
+        </script>
+    </main>
+
+</body>
+
+</html>
